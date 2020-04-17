@@ -13,11 +13,15 @@ $mahasiswa = query("SELECT * FROM mahasiswa")
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daftar Mahasiswa</title>
+  <link rel="stylesheet" href="style/styles.css">
 </head>
 
 <body>
 
   <h3>Daftar Mahasiswa</h3>
+
+  <a href="tambah.php" class="link">Tambah Data Mahasiswa</a>
+  <br><br>
 
   <table border="1" cellpadding="10" cellspacing="0">
     <tr>

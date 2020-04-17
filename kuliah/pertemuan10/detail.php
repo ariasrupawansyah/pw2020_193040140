@@ -17,21 +17,37 @@ $mahasiswa = query("SELECT * FROM mahasiswa where id = $id");
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Detail Mahasiswa</title>
+  <link rel="stylesheet" href="style/styles.css">
 </head>
 
 <body>
 
   <h3>Detail Mahasiswa</h3>
 
-  <ul>
-    <li><img src="img/<?= $mahasiswa['gambar']; ?>" width="60"></li>
-    <li>NRP : <?= $mahasiswa['nrp']; ?></li>
-    <li>Nama : <?= $mahasiswa['nama']; ?></li>
-    <li>Email : <?= $mahasiswa['email']; ?></li>
-    <li>Jurusan : <?= $mahasiswa['jurusan']; ?></li>
-    <li><a href="">Ubah</a> | <a href="">Hapus</a></li>
-    <li><a href="latihan3.php">Kembali ke daftar mahasiswa</a></li>
-  </ul>
+  <div class="container">
+
+    <ul>
+      <li><img src="img/<?= $mahasiswa['gambar']; ?>" class="gambar"></li>
+      <li>
+        <b>DATA :</b>
+      </li>
+
+      <div class="box1">
+
+        <li>NRP : <?= $mahasiswa['nrp']; ?></li>
+        <li>Nama : <?= $mahasiswa['nama']; ?></li>
+        <li>Email : <?= $mahasiswa['email']; ?></li>
+        <li>Jurusan : <?= $mahasiswa['jurusan']; ?></li>
+
+      </div>
+
+      <div class="box2">
+        <li><a href="">Ubah</a> | <a href="">Hapus</a></li>
+        <li><a href="latihan3.php">Kembali ke daftar mahasiswa</a></li>
+      </div>
+    </ul>
+
+  </div>
 
 </body>
 
