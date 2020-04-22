@@ -3,9 +3,6 @@
 //menghubungkan dengan file php lainnya
 require 'php/function.php';
 
-//melakukan query
-$apparel = query("SELECT * from apparel");
-
 if (isset($_GET['cari'])) {
 	$keyword = $_GET['keyword'];
 	$apparel = query("SELECT * FROM apparel WHERE 
